@@ -1,0 +1,170 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('../imagen/imagen5.jpg') no-repeat center center fixed; /* Imagen de fondo */
+    background-size: cover;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con 80% de opacidad */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Cambiado de 90% a 80% */
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Título grande */
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilos del carrusel */
+.carousel {
+    width: 95%; /* El carrusel ocupará el 95% del ancho de la página */
+    max-width: 1200px; /* Añade un límite máximo si lo deseas */
+    margin: 20px auto; /* Centra el carrusel horizontalmente */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade un poco de sombra */
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-inner img {
+    width: 100%; /* Las imágenes ocuparán todo el ancho disponible */
+    height: 500px; /* Ajusta la altura como prefieras */
+    object-fit: cover; /* Esto hace que la imagen se recorte de manera uniforme y mantenga proporciones */
+    border-radius: 10px; /* Redondea las esquinas para que coincida con el contenedor */
+}
+
+/* Estilos para el select */
+select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para la tabla con transparencia */
+#data-table {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con transparencia */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Gráfica con transparencia */
+#myChart {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con transparencia */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Tarjeta de resultados */
+#resultados {
+    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco con transparencia */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    border-bottom: 2px solid #ddd;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    color: #333;
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler-icon {
+    color: #333;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: none;
+    content: "\2630"; /* Ícono de hamburguesa */
+    font-size: 1.5rem;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    select, table {
+        font-size: 14px;
+    }
+
+    .content {
+        width: 90%; /* Para pantallas más pequeñas */
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #212529; /* Color de fondo del footer */
+    color: #fff; /* Color de texto blanco */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 60px; /* Centrar el texto verticalmente */
+}
+
